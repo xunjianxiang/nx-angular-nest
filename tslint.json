@@ -29,7 +29,7 @@
       }
     ],
     "no-arg": true,
-    "no-bitwise": true,
+    "no-bitwise": false,
     "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
     "no-construct": true,
     "no-debugger": true,
@@ -45,7 +45,7 @@
     "no-string-throw": true,
     "no-switch-case-fall-through": true,
     "no-unnecessary-initializer": true,
-    "no-unused-expression": true,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "prefer-const": true,
@@ -66,8 +66,8 @@
         ]
       }
     ],
-    "directive-selector": [true, "attribute", "app", "camelCase"],
-    "component-selector": [true, "element", "app", "kebab-case"],
+    "directive-selector": [true, "attribute", "x", "camelCase"],
+    "component-selector": [true, "element", "x", "kebab-case"],
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,
@@ -79,6 +79,16 @@
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
+    "use-pipe-transform-interface": true,
+    "quotemark": [ true, "single"],
+    "space-before-function-paren": true,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "semicolon": [true, "always"]
   }
 }
